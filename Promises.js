@@ -56,16 +56,19 @@ let pro2=(roll_No_user)=>{
 pro1.then((roll_no)=>{
     console.log("Roll_No recieved successfully");
     setTimeout(()=>{
-        pro2(roll_no[1]).then((msg)=>{
-            console.log(msg)
-        }).catch((err)=>{
-            console.log(err);
-        })
+        
     },2000,roll_no[1])
-     pro2(roll_no[1])
+    return pro2()
 
+}).then((msg)=>{
+    console.log(msg)
+}).catch((err)=>{
+    console.log(err);
 })
 .catch((err)=>{
     console.log(err)
 })
+
+
+
 })()

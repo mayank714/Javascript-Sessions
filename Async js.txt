@@ -1,0 +1,10 @@
+Callback disad:
+1- Complex to write
+2- Syntax do matters a lot
+3- Hard to read
+4- Callback hell =====> Promises and aync await
+
+Promises => has 3 stages
+1- Pending
+2- resolve
+3- Reject
